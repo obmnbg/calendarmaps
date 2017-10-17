@@ -1,0 +1,24 @@
+{
+    "remotePath": "./calendarmaps",
+    "host": "ftp.strato.de",
+    "username": "ftp_olibm@horus666.de",
+    "password": "200Osiris381!",
+    "port": 21,
+    "secure": false,
+    "protocol": "ftp",
+    "uploadOnSave": true,
+    "passive": false,
+    "debug": false,
+    "privateKeyPath": null,
+    "passphrase": null,
+    "ignore": [
+        "\\.vscode",
+        "\\.git",
+        "\\.DS_Store"
+    ],
+    "generatedFiles": {
+        "uploadOnSave": false,
+        "extensionsToInclude": [],
+        "path": ""
+    }
+}

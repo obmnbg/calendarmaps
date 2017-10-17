@@ -230,18 +230,17 @@
                 }).then(function(response) {
                     var taskLists = response.result.items;
 
-                    if (taskLists && taskLists.length > 0) {
+                    if (taskLists && taskLists.length) {
                         for (var i = 0; i < taskLists.length; i++) {
                             var taskListId = taskLists[i].id;
 
-                            // ToDo: Das geht nicht und finde keinerlei Doku
                             gapi.client.tasks.tasks.list({
                                 tasklist: taskListId
                             }).then(function (response) {
                                 var tasks = response.result.items;
 
                                 for(var j=0;j<tasks.length;j++){
-                                    appendPre(tasks[j].title + ' (' + tasks[j].id + ')');
+                                    appendPre(tasks[j].title + ', ' + tasks[j].due);
                                 }
                             })
                         }
